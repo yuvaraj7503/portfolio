@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "@/app/utils/motion";
 import { SectionWrapper } from "./HigherOrderComponents";
 
 type FeedbackCardProps = {
-	index: number;
+	index: number;  
 	testimonial: string;
 	name: string;
 	link: string;
