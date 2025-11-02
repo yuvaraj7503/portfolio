@@ -32,17 +32,17 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_t2kyrxc",
-        "template_ns3xuuk",
+        "service_wt7q4el",
+        "template_v9ta0k4",
         {
           from_name: form.name,
-          to_name: "Indian M",
+          to_name: "YUVARAJ P",
           from_email: form.email,
-          to_email: "indiantechdigi@gmail.com",
+          to_email: "yuvaraj7503@gmail.com",
           message: form.message,
           reply_to: form.email,
         },
-        "L7AABD1oMiVfVkQk0"
+        "QnyJScnFhHq-ZFvhU"
       )
       .then(() => {
         setLoading(false);
@@ -56,7 +56,7 @@ const Contact = () => {
         setLoading(false);
         console.error("Email send error:", error);
         alert(
-          "Sorry! Something went wrong. Please try again or email me directly at indiantechdigi@gmail.com"
+          "Sorry! Something went wrong. Please try again or email me directly at yuvaraj7503@gmail.com"
         );
       });
   };

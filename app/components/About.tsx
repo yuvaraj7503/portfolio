@@ -4,7 +4,7 @@ import { SectionWrapper } from "./HigherOrderComponents";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Tilt } from "react-tilt";
-import { services } from "../constants";
+
 import { fadeIn, textVariant } from "@/app/utils/motion";
 
 type ServiceCardProps = {
@@ -54,13 +54,9 @@ const About = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-[3xl] leading-[30px]"
 			>
-				Senior Full-Stack Software Engineer specializing in end-to-end application development from architecture design to deployment. Expertise in building scalable web and mobile solutions using React, Next.js, Node.js, Python, Flutter, and .NET. Proficient in DevOps practices with Docker, Jenkins, and CI/CD pipelines on AWS and Azure. Demonstrated success in architecting and delivering complex systems including IoT-based automation, ERP platforms, and Building Management Systems (BMS) with MQTT and InfluxDB integration. Currently leading technical implementation and team coordination while delivering high-impact solutions for industrial clients including PMEL, Royal Enfield, and Wheel India.
+				Junior MERN Stack Developer specializing in end-to-end web application development, from system architecture to deployment. Skilled in building scalable and high-performance solutions using MongoDB, Express.js, React.js, and Node.js, with hands-on experience in RESTful APIs, authentication, and cloud deployments. Proficient in integrating modern frontend frameworks with secure and efficient backend services.Demonstrated ability to contribute to complex platforms, including IoT-enabled dashboards, ERP systems, and Building Management Systems (BMS) with MQTT and InfluxDB integration. Focused on continuous learning, technical execution, and effective team collaboration to deliver impactful full-stack solutions.
 			</motion.p>
-			<div className="mt-20 flex flex-wrap gap-10">
-				{services.map((service, index) => (
-					<ServiceCard key={service.title} index={index} {...service} />
-				))}
-			</div>
+			
 		</>
 	);
 };

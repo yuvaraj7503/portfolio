@@ -23,29 +23,29 @@ const FeedbackCard = ({
 	image,
 }: FeedbackCardProps) => (
 	<motion.div
-		variants={fadeIn("", "spring", index * 0.5, 0.75)}
-		className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
+		variants={fadeIn("up", "spring", index * 0.2, 0.75)}
+		className="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/20 group"
 	>
-		<p className="text-white font-black text-[48px]">&quot;</p>
-
-		<div className="mt-1 ">
-			<p className="text-white tracking-wider text-[18px]">{testimonial}</p>
-			<div className="mt-7 flex justify-between items-center gap-1">
-				<div className="flex-1 flex flex-col">
-					<p className="text-white font-medium text-[16px]">
-						<span className="blue-text-gradient">@</span>
+		<div className="flex items-start gap-4">
+			<Link href={link} className="flex-shrink-0">
+				<Image
+					src={image}
+					width={60}
+					height={60}
+					alt={`${name} profile`}
+					className="w-14 h-14 rounded-full object-cover ring-2 ring-cyan-500/50 group-hover:ring-cyan-400 transition-all duration-300 group-hover:scale-110"
+				/>
+			</Link>
+			
+			<div className="flex-1">
+				<Link href={link} className="block group/name">
+					<h3 className="text-white font-semibold text-lg group-hover/name:text-cyan-400 transition-colors duration-300">
 						{name}
-					</p>
-				</div>
-				<Link href={link}>
-					<Image
-						src={image}
-						width={40}
-						height={40}
-						alt={`feedback by ${name}`}
-						className="w-10 h-10 rounded-full object-cover "
-					/>
+					</h3>
 				</Link>
+				<p className="text-slate-400 text-sm mt-2 leading-relaxed">
+					{testimonial}
+				</p>
 			</div>
 		</div>
 	</motion.div>
@@ -53,19 +53,22 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
 	return (
-		<div className="mt-12 bg-black-100 rounded-[20px]">
-			<div className="padding bg-tertiary rounded-2xl min-h-[300px]">
+		<div className="mt-12">
+			<div className="padding bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 rounded-2xl min-h-[300px]">
 				<motion.div variants={textVariant()}>
-					<h2 className="sectionHeadText">Social Profiles</h2>
-					<p className="sectionSubText">
-						Click on social media icons to check out..
+					<h2 className="sectionHeadText text-white">Social Profiles</h2>
+					<p className="sectionSubText text-slate-300">
+						Connect with me on social media
 					</p>
 				</motion.div>
 			</div>
-			<div className="paddingX -mt-20 pb-14 flex flex-wrap gap-7">
-				{testimonials.map((testimonial, index) => (
-					<FeedbackCard key={testimonial.id} index={index} {...testimonial} />
-				))}
+			
+			<div className="paddingX -mt-20 pb-14">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					{testimonials.map((testimonial, index) => (
+						<FeedbackCard key={testimonial.id} index={index} {...testimonial} />
+					))}
+				</div>
 			</div>
 		</div>
 	);
