@@ -10,7 +10,7 @@ import { SectionWrapper } from "./HigherOrderComponents";
 type FeedbackCardProps = {
 	index: number;  
 	testimonial: string;
-	name: string;
+	name: string;   
 	link: string;
 	image: string;
 };
