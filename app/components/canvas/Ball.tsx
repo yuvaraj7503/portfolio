@@ -2,7 +2,7 @@
 import CanvasLoader from "@/app/components/Loader";
 import {
 	Decal,
-	Float,
+	Float, 
 	OrbitControls,
 	Preload,
 	useTexture,

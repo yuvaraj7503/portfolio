@@ -18,7 +18,7 @@ const ResumeButton = () => {
 	
 	{/* Rotating border effect */}
 	<span className="absolute inset-0 rounded-lg bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-500 animate-spin-slow"></span>
-	
+	  
 	<Image
 		src="/resume.svg"
 		width={20}

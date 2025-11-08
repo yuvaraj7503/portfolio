@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ResumeButton from "./ResumeButton";
-
+   
 const Navbar = () => {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);

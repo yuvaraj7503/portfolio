@@ -8,7 +8,7 @@ import {
   SiRedux, 
   SiJavascript, 
   SiTypescript, 
-  SiGit,
+  SiGit,   
   SiExpress,
   SiTailwindcss,
   SiHtml5,

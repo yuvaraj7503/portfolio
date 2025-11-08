@@ -5,7 +5,7 @@ import { textVariant } from "@/app/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import {
+import {   
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";

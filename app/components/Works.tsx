@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "./HigherOrderComponents";
 
 type ProjectCardProps = {
-	index: number;
+	index: number;   
 	name: string;
 	description: string;
 	tags: {

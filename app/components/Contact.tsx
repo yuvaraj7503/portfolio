@@ -29,7 +29,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-
+     
+    
     emailjs
       .send(
         "service_wt7q4el",

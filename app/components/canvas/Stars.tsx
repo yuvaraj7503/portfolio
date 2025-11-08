@@ -7,7 +7,7 @@ import type { Points as PointProps } from "three";
 
 // biome-ignore lint/suspicious/noExplicitAny: <explanation>
 const Stars = (props: any) => {
-	const ref = useRef<PointProps>(null);
+	const ref = useRef<PointProps>(null); 
 	const [sphere] = useState(() =>
 		random.inSphere(new Float32Array(6000), { radius: 1.2 }),
 	);

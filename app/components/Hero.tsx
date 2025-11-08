@@ -13,7 +13,7 @@ const Hero = () => {
 		duration: Math.random() * 15 + 10,
 		delay: Math.random() * 5,
 	}));
-
+   
 	return (
 		<section className="relative w-full h-screen mx-auto overflow-hidden">
 			{/* Animated gradient background */}

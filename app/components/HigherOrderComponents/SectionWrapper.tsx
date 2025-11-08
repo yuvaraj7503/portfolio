@@ -1,6 +1,6 @@
 "use client";
 import { staggerContainer } from "@/app/utils/motion";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
 import type { FC } from "react";
 
 const SectionWrapper = (Component: FC, idName: string) => {

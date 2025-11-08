@@ -2,7 +2,7 @@
 
 import { SectionWrapper } from "./HigherOrderComponents";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Image from "next/image"; 
 import { Tilt } from "react-tilt";
 
 import { fadeIn, textVariant } from "@/app/utils/motion";
